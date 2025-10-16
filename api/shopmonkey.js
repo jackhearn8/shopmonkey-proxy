@@ -11,7 +11,7 @@ export default async function handler(req, res) {
       res.status(200).json({ status: "ok" });
 
       // 🔁 Forward payload to your Google Apps Script
-      const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxeekxuerKB4aWlbFDAdxrrWbPHOgLakb0rxaYwvurPe13CwjbQQ975iBhoaHpJIKXjuw/exec"; // <-- replace this
+      const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwQNWvTJyKZdGpclxeCW_hFI4qFgYtSGmOPrIK5b3ii3q6L6iSZVxsq5hZam9nPCl6CFg/exec"; // <-- replace this
 
       await fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",
